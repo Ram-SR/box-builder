@@ -13,7 +13,7 @@ Angular requires Node.js version 8.x or 10.x.
 3. To check that you have the npm client installed, run `npm -v` in a terminal/console window.
 4. Install the Angular CLI globally. To install the CLI using npm, open a terminal/console window and enter the following command:
 `npm install -g @angular/cli`
-5. Pull the code, go to root folder of the project and run `npm install`
+5. Clone/download the code, go to root folder of the project and run `npm install`
 
 Follow below things to run the project on dev server and to see the output
 
