@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Box Builder</h1>
+  <h2>Start Building</h2>
+  <button class="button button--success" (click)="operateBoxes('add')">
+    Add Box
+  </button>
+  <button
+    class="button button--danger button--right"
+    (click)="operateBoxes('remove')"
+  >
+    Remove Box
+  </button>
+  <div class="boxes__list" *ngIf="!boxes.length">No boxes</div>
+  <div class="boxes__list" *ngIf="boxes.length">
+    <app-box
+      *ngFor="let box of boxes; let value = index"
+      [value]="value + 1"
+      [isOdd]="(value + 1) % 2"
+      [isNotMultipleOfFive]="(value + 1) % 5"
+    ></app-box>
+  </div>
+  <div
+    class="box__count"
+    *ngIf="boxes.length"
+    [style.fontSize.px]="30 + boxes.length * 2"
+  >
+    {{ boxes.length }}
+  </div>
+</div>
