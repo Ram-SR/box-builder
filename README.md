@@ -15,6 +15,8 @@ Angular requires Node.js version 8.x or 10.x.
 `npm install -g @angular/cli`
 5. Go to root folder of the project and run `npm install`
 
+Follow below things to run the project on dev server and to see the output
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
